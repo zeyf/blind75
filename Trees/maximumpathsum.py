@@ -38,7 +38,7 @@ First idea:
     - Map parent child relationships
     - As this is done, recurse at each node in all directions with a guided search style approach
         - guided by non visited nodes, however backtracking to not "block" in other recursive subcalls that can go down the same path.
-    - recurse up, left, and right. track the max at every directional turn.
+    - recurse up, left, and right. track the max at every directional turn.`
 '''
 
 class Solution:
