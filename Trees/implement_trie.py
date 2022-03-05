@@ -3,6 +3,8 @@ https://leetcode.com/problems/implement-trie-prefix-tree/
 208. Implement Trie (Prefix Tree)
 Medium
 
+===
+
 A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
 
 Implement the Trie class:
@@ -67,11 +69,9 @@ class Trie:
             c.numWords += 1;
             c = c.children[idx];
             i += 1;
-        
+
         c.numWords += 1;
         c.isWord = True;
-
-        
 
     def search(self, word: str) -> bool:
         c = self.root;
